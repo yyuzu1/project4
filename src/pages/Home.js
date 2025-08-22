@@ -102,7 +102,11 @@ const Home = () => {
                 <>
                     <h2>식단 기록</h2>
                     <DietList data={dietData} />
+<<<<<<< HEAD
                     <h2>운동 기록</h2>
+=======
+                    <br /><h2>운동 기록</h2>
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
                     <XList data={exerciseData} />
                 </>
             )}

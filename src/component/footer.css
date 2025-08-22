@@ -1,3 +1,21 @@
+<<<<<<< HEAD
 .footer{
     
+=======
+.Footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+h3 {
+  color: rgb(122, 119, 119);
+}
+
+p {
+    font-size: 25px;
+    font-weight: 500;
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 }

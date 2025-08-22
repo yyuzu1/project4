@@ -28,7 +28,11 @@ const XList = ({ data }) => {
                 {data.length > 0 ? (
                     data.map((it) => <XItem key={it.id} {...it} />)
                 ) : (
+<<<<<<< HEAD
                     <p>기록이 없습니다.</p>
+=======
+                    <div>기록이 없습니다.</div>
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
                 )}
             </div>
         </div>

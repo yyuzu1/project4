@@ -1,0 +1,33 @@
+.Diet {
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 30px 20px 20px 20px;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.date {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(122, 119, 119);
+}
+
+.detailData {
+    justify-content: center;
+    padding: 0px 20px 20px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.detailData p {
+    font-size: 20px;
+}

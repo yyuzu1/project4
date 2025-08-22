@@ -1,10 +1,18 @@
 // src/pages/Exercise.js (Diet.js도 동일한 형태로 만드세요)
+<<<<<<< HEAD
 
+=======
+import './Diet.css';
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 import { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { XStateContext } from "../App";
 import Header from "../component/Header";
 import Button from "../component/Button";
+<<<<<<< HEAD
+=======
+import { getFormattedDate } from "../util";
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 
 const Exercise = () => {
     const { id } = useParams();
@@ -30,6 +38,7 @@ const Exercise = () => {
     };
 
     return (
+<<<<<<< HEAD
         <div>
             <Header
                 title={"운동 기록 상세"}
@@ -47,4 +56,31 @@ const Exercise = () => {
     );
 };
 
+=======
+    <div>
+        <Header
+            title={"운동 기록 상세"}
+            leftChild={<Button text={"< 뒤로가기"} onClick={() => navigate(-1)} />}
+            rightChild={<Button text={"수정하기"} onClick={onGoEdit} />}
+        />
+        {detailData && (
+                    <div className="Diet">
+                        <div className='date_section'>
+                            <div className='date'>{getFormattedDate(new Date(parseInt(detailData.date)))}</div>
+                        </div>
+                        <div className='detailData'>
+                            <h4>항목</h4>
+                            <p>{detailData.item}</p>
+                            <h4>열량</h4>
+                            <p>{detailData.kcal} kcal</p>
+                        {/* 필요에 따라 기타 상세 정보 추가 */}
+                    </div>
+                    </div>
+                )}
+            </div>
+     );
+};
+
+
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 export default Exercise;

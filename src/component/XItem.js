@@ -5,6 +5,10 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { XDispatchContext } from "../App";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 const XItem = ({ id, category, item, kcal }) => {
     const navigate = useNavigate();
 
@@ -34,7 +38,11 @@ const XItem = ({ id, category, item, kcal }) => {
                     항목: {item} / 열량: {kcal} kcal
                 </div>
             </div>
+<<<<<<< HEAD
             <Button text="삭제" type="negative" onClick={handleDelete} />
+=======
+            <Button text={"삭제"} type={"negative"} onClick={handleDelete} />
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
         </div>
     );
 };

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .XList {
 
 }
@@ -5,6 +6,9 @@
 .XList .menu_wrapper {
     margin-top: 20px;
     margin-bottom: 30px;
+=======
+.XList .menu_wrapper {
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
     display: flex;
     justify-content: space-between;
 }
@@ -29,4 +33,12 @@
 
 .XList .menu_wrapper .right_col button {
     width: 100%;
+<<<<<<< HEAD
 }
+=======
+}
+
+.list_wrapper {
+    font-size: 20px;
+}
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6

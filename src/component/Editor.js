@@ -5,7 +5,10 @@ import { useState, useEffect } from "react";
 import { getFormattedDate } from "../util";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
+<<<<<<< HEAD
 import Header from './Header';
+=======
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 
 const categoryOptionList = [
     { value: "exercise", name: "운동" },
@@ -38,7 +41,11 @@ const Editor = ({ initData, onSubmit, onClickDelete }) => {
             date: e.target.value,
         });
     };
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
     const handleChangeCategory = (e) => {
         setState({
             ...state,
@@ -65,7 +72,11 @@ const Editor = ({ initData, onSubmit, onClickDelete }) => {
             alert("항목과 열량을 입력해주세요.");
             return;
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
         onSubmit(state.date, state.category, state.item, state.kcal);
     };
 
@@ -75,6 +86,7 @@ const Editor = ({ initData, onSubmit, onClickDelete }) => {
 
     return (
         <div className="Editor">
+<<<<<<< HEAD
             <div className="top_section">
                 <Header
                     leftChild={
@@ -110,17 +122,50 @@ const Editor = ({ initData, onSubmit, onClickDelete }) => {
             <div className="editor_section">
                 <h4>오늘의 날짜</h4>
                 
+=======
+            <div className="editor_section top_section">
+                <Button
+                    text={"취소"}
+                    onClick={handleGoBack}
+                />
+                <Button
+                    text={"저장하기"}
+                    type={"positive"}
+                    onClick={handleSubmit}
+                />
+                {/* onClickDelete가 전달된 경우에만 삭제 버튼 렌더링 */}
+                {onClickDelete && (
+                    <Button
+                        text={"삭제하기"}
+                        type={"negative"}
+                        onClick={onClickDelete}
+                    />
+                )}
+            </div>
+            
+            <div className="editor_section">
+                <h4>오늘의 날짜</h4>
+                <div className="input_wrapper">
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
                     <input
                         type="date"
                         value={state.date}
                         onChange={handlechangeDate}
                     />
+<<<<<<< HEAD
                
+=======
+                </div>
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
             </div>
 
             <div className="editor_section">
                 <h4>분류</h4>
+<<<<<<< HEAD
                 
+=======
+                <div className="input_wrapper">
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
                     <select
                         value={state.category}
                         onChange={handleChangeCategory}
@@ -131,19 +176,29 @@ const Editor = ({ initData, onSubmit, onClickDelete }) => {
                             </option>
                         ))}
                     </select>
+<<<<<<< HEAD
                 
+=======
+                </div>
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
             </div>
 
             <div className="editor_section">
                 <h4>항목</h4>
+<<<<<<< HEAD
                 <div className='input_wrapper'>
+=======
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
                 <input
                     type="text"
                     value={state.item}
                     onChange={handlechangeItem}
                 />
             </div>
+<<<<<<< HEAD
             </div>
+=======
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 
             <div className="editor_section">
                 <h4>열량</h4>

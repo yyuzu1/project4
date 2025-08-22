@@ -16,12 +16,17 @@
 }
 
 
+<<<<<<< HEAD
 .XItem .infor_section{
+=======
+.XItem .info_wrapper{
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
     flex-grow: 1;
     margin-left: 20px;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .XItem .infor_section .date_wrapper{
     font-weight: bold;
     font-size: 25px;
@@ -32,6 +37,13 @@
     font-size: 18px;
 }
 
+=======
+.XItem .info_wrapper .item_section{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+>>>>>>> f9f252a847d369f500e32fcd4e844884d8d706a6
 .XItem .button_section{
     min-width: 70px;
 }
