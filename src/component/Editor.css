@@ -1,0 +1,47 @@
+.Editor { }
+
+.Editor .editor_section {
+    margin-bottom: 40px;
+}
+
+.Editor h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.Editor input, textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.Editor input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.Editor .bottom_section {
+    display: flex;
+    /* 첫 번째 자식 요소는 컨테이너의 시작 부분에 배치되고, 마지막 자식 요소는 컨테이너의 끝 부분에 배치. */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Editor .top_section {
+    display: flex;
+    /* 첫 번째 자식 요소는 컨테이너의 시작 부분에 배치되고, 마지막 자식 요소는 컨테이너의 끝 부분에 배치. */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Editor .emotion_list_wrapper {
+    display: flex;
+    /* 자식 요소들 사이와 시작 및 끝 부분에 동일한 여백을 둔다 */
+    justify-content: space-around;
+    gap: 2%;
+}

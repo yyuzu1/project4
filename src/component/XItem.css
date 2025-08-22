@@ -1,0 +1,32 @@
+.XItem{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom:  1px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.XItem .img_section{
+    cursor: pointer;
+    min-width: 120px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.XItem .info_wrapper{
+    flex-grow: 1;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.XItem .info_wrapper .item_section{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.XItem .button_section{
+    min-width: 70px;
+}
